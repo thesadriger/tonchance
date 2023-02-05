@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TON.Chance</title>
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+/*Background*/
+body { 
+  background: linear-gradient(90deg, #3fb0ff, #831bcb);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+  font-family: Tahoma; 
+  margin: 0; 
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*Header*/
+.parallax { 
+    background: black;
+    opacity: 70%;
+    margin-top: 20px;
+    height: 80px;
+}
+.mainlogo {
+    float: left;
+    height: 51px;
+    margin: -120px 0 0 0px;
+    position: center;
+    width: 310px;
+  }
+  .text-6 {
+    left: 50%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 52.82996px;
+    font-weight: bold;
+    line-height: 51px;
+    margin-left: -155px;
+  }
+  .ton_logo {
+    left: 50%;
+    position: absolute;
+    top: 27px;
+    margin-left: -125px;
+    width: 35px;
+    height: 35px;
+  }
+.logo{
+    position: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 297px;
+    height: 40px;
+
+}
+.parallax h1 { 
+    text-align: center;  
+    font-size: 50px;  
+    color:#fff;  
+
+}
+/*Lobby*/
+.games-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.game1 {
+  width: 400px;  /* Ширина изображения */ 
+  float: left; /* Обтекание по правому краю */ 
+  padding: 5px; /* Поля вокруг текста */ 
+  margin: 50px; /* Отступы вокруг */ 
+  border-radius: 10px; /* Закругление углов */ 
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */  
+  transition: all 0.5s ease; /* Анимация */  
+  cursor: pointer; /* "Рука" */  
+  background: url(images/BG_KNB_Lobby.png);
+  opacity: 90%;
+
+}
+
+.game2 {
+  width: 400px;  /* Ширина изображения */ 
+  float: left; /* Обтекание по правому краю */ 
+  padding: 5px; /* Поля вокруг текста */ 
+  margin: 50px; /* Отступы вокруг */ 
+  border-radius: 10px; /* Закругление углов */ 
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */  
+  transition: all 0.5s ease; /* Анимация */  
+  cursor: pointer; /* "Рука" */  
+  background: url(images/BG_Coin_Lobby.png);
+  opacity: 90%;
+
+} 
+
+.game1:hover {  
+
+  transform: scale(1.2); /* Zoom*/  
+  box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
+
+}  
+.game2:hover {  
+
+  transform: scale(1.2); /* Zoom*/  
+  box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
+  
+}
+    
+.kamen {
+  margin-top: 0px !important;
+  width: 400px;
+  height: 290px;
+  opacity: 80%;
+}
+    
+.clearfix::after {  
+  content:"";  
+  display:block;  
+  clear:both;  
+
+} 
+  img {max-width : 100%;}/*максимальное соответсвие*/     
+  img {height : 300px;}/*масштаб*/     
+  img {vertical-align : middle;}/*выровнять*/     
+  img {border : none;}/*удалить рамку*/     
+  img {margin : 0;}/*отступы*/     
+  img {padding : 0;}/*отступы*/     
+
+  .caption{text-align : center;}/*выровнять*/     
+  .caption{font-family : sans-serif;}/*шрифт*/     
+  .caption{font-size : 20px;}/*размер шрифта*/ 
+  .caption{font-weight: bold;}/*толщина шрифта*/
+  .caption{color : rgb(255, 255, 255);}/*цвет шрифта*/ 
+  .caption{margin-top : 10px}
+
+/*Live*/
+.online{
+  position: absolute;
+    top: 140%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+.online-live {
+  left: 50%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-left: -60px;
+  margin-top: -50px ;
+}
+.online-quantity{
+  left: 50%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-left: 0px;
+  margin-top: -100px ;
+}
+
+/*Telegram*/
+.Button.light {
+  background: rgb(16, 164, 223);
+  color: #fff;
+}
+.Button {
+  border-color: #296ea0;
+  padding: 13px 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.Button__icon {
+  width: 24px;
+  height: 24px;
+}
+.Button__text {
+  padding: 0 8px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.Button__icon svg {
+  width: inherit;
+  height: inherit;
+}
+.Auth__telegramBtn svg {
+  color: #ffffff;
+}
+</style>
+</head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            <body>
+                
+                <!--<div class="Button light normal stretched Auth__telegramBtn">
+                  <div class="Button__icon" >
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.15 10.61c6.442-2.823 10.738-4.683 12.888-5.582C21.175 2.46 22.45 2.015 23.282 2c.182-.003.591.042.856.259.223.182.285.428.314.601.03.173.066.567.037.875-.332 3.514-1.771 12.041-2.503 15.977-.31 1.665-.92 2.223-1.51 2.278-1.284.119-2.259-.853-3.502-1.672-1.945-1.282-3.043-2.08-4.931-3.331-2.182-1.446-.768-2.24.476-3.54.325-.34 5.98-5.511 6.089-5.98.014-.059.026-.278-.103-.393-.13-.116-.32-.076-.457-.045-.196.045-3.303 2.11-9.322 6.196-.882.609-1.681.905-2.397.89-.789-.017-2.307-.449-3.435-.818-1.384-.452-2.484-.691-2.388-1.46.05-.4.598-.809 1.644-1.227Z" fill="currentColor">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="Button__text">Войти через Telegram</div>
+                </div> -->
+                <div class="parallax"></div>
+                <div class="mainlogo">
+                    <p class="text-6">Ton.Chance</p>
+                    <img class="ton_logo" src="images/Ton_Logo.png">
+                </div>
+                   
+                <div class="games-container">        
+                                    <div class="game1"> 
+                                        <a href="games/LobbyKNB/lobby.html">
+                                          <img class="kamen" img src="images/null.png" onmouseover="this.src='images/start.png'" onmouseout="this.src='images/null.png'" alt="" width="36" height="36" ></a>
+                                          <div class="caption"> Камень Ножницы Бумага </div> 
+                                     </div>
+                                    <div class="game2"> 
+                                      <a href="games/coin.html">             
+                                        <img class="kamen" img src="images/null.png" onmouseover="this.src='images/start.png'" onmouseout="this.src='images/null.png'" alt="" width="36" height="36"></a> 
+                                        <div class="caption"> Монетка </div>           
+                                    </div> 
+                    <div class="clearfix"></div><!--для float-->       
+                </div><!-- games container --> 
+                <div class="online">
+                  <p class="online-live">Онлайн<script>
+                      let onlineCounter = 0;
+                  
+                      window.addEventListener('load', () => {
+                        onlineCounter++;
+                        document.getElementById('online-counter').innerHTML = onlineCounter;
+                      });
+                  
+                      window.addEventListener('beforeunload', () => {
+                        onlineCounter--;
+                       document.getElementById('online-counter').innerHTML = onlineCounter;
+                      });
+                    </script>
+                    <div class="online-quantity" id="online-counter">0</div>
+                  </p>
+                </div>
+            </body>
+</html>

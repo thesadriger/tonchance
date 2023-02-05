@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <title>TON.Chance</title>
+<style type="text/css">
+/* ----CSS----- */
+body { 
+    background: linear-gradient(90deg, #3fb0ff, #831bcb);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+    font-family: Tahoma; 
+    margin: 0; 
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.parallax { 
+    background: black;
+    opacity: 70%;
+    margin-top: 20px;
+    height: 80px;
+}
+.mainlogo {
+    float: left;
+    height: 51px;
+    
+    width: 310px;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-6 {
+    left: 50%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 52.82996px;
+    font-weight: bold;
+    line-height: 51px;
+    margin-left: -155px;
+  }
+  .ton_logo {
+    left: 50%;
+    position: absolute;
+    top: 67px;
+    margin-left: -125px;
+    width: 35px;
+    height: 35px;
+  }
+
+.parallax h1 { 
+    text-align: center;  
+    font-size: 50px;  
+    color:#fff;  
+
+}
+
+.box-border-main{
+    border: 4px;
+    background: #0000006c;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 600px;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+    top: 485%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+h1 {
+    color: #6D214F;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.progress-ring {
+    width: 80px; 
+    height: 80px; 
+    border: 5px solid transparent; 
+    border-radius: 200px; 
+    position: relative; 
+    animation: progress 60s linear forwards;   /* Animation of the progress ring. Change '1s' to adjust duration*/
+    position: absolute; 
+      top: 3%; left: 80%; 
+transform: translate(-50%, -50%); 
+  }
+
+  @keyframes progress {    /* Keyframe animation*/
+  0% { border-color: rgb(27, 214, 10); transform: rotate(0deg); } 
+  25% { border-color: rgb(90, 214, 10); transform: rotate(90deg); } 
+  50% { border-color: rgb(214, 211, 10); transform: rotate(180deg); } 
+  75% { border-color: rgb(214, 166, 10); transform: rotate(270deg); } 
+  100% { border-color: rgb(214, 10, 10); transform: rotate(360deg); } 
+}
+#timer { 
+      font-size: 40px; 
+      position: absolute; 
+      top: 10%; left: 88%;  
+      color: rgb(255, 255, 255);
+      transform: translate(-50%, -50%);  
+  }
+.score-table {
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    background: linear-gradient(90deg, #3fb0ff, #831bcb);
+    box-shadow: 0 0 20px rgb(250, 237, 53);
+    font-size: 40px;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.badge {
+    background: linear-gradient(90deg, #3fb0ff, #831bcb);
+    box-shadow: 0 0 10px rgb(250, 237, 53);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 4px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#user-label {
+    position: absolute;
+    width: 40%;
+    top: 75px;
+    left: 60px;
+}
+
+.result {
+    font-size: 40px;
+    color: #f7f1e3;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.group-choices{
+    border: 4px;
+    background: #0000006c;
+    border-radius: 10px;
+    width: 380px;
+    height: 150px;
+    margin: -45px 18% 5px;
+    display: inline-block;
+}
+
+.choices {
+    margin: 30px 0;
+    text-align: center;
+}
+.choice {
+    border: 4px solid rgb(250, 237, 53);
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+
+.choice:hover {
+    cursor: pointer;
+    background: #ffffff;
+}
+.border-message{
+    border: 4px;
+    background: #0000006c;
+    border-radius: 10px;
+    width: 380px;
+    height: 40px;
+    margin: 50px 18% ;
+}
+
+#message {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+
+.green-glow {
+    border: 4px solid #05c46b;
+    box-shadow: 0 0 40px #0be881;
+}
+
+.red-glow {
+    border: 4px solid #f53b57;
+    box-shadow: 0 0 10px #ef5777;
+}
+
+.blue-glow {
+    border: 4px solid #6bc5d2;
+    box-shadow: 0 0 10px #485460;
+}
+
+.back-to-menu{
+    border: 4px;
+    background: #0000006c;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: -19%;
+    left: -63%;
+    transform: translate(-50%, -50%);
+}
+
+.back-to-menu-button{
+    left: 50%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;    
+    font-weight: bold;
+    line-height: 51px;
+    margin-left: -35px;
+    
+}
+
+</style>
+
+<!-- -----HTML----- -->
+<body>
+    <div class="parallax"></div>
+    <div class="mainlogo">
+        <p class="text-6">Ton.Chance</p>
+        <img class="ton_logo" src="images/Ton_Logo.png">
+        
+      </div>
+    <div class="box-border-main">
+        <div class="score-table">
+            <div id="user-label" class="badge">Общий Банк</div>
+            <span id="user-score">0</span> : <span id="computer-score">0</span> <!--<img src="images/Ton_Logo.png" alt="" width="30px" height="30px"> - Добавление Ton к балансу-->
+        </div>
+        <div class="result">
+         <p></p>
+        </div>
+        <div class="border-message"><p id="message">Сделайте Ваш выбор:</p></div>
+        <div class="group-choices">
+         <div class="choices">
+             <div class="choice" id="r">
+                 <img src="https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png" onmouseover="this.src='https://www.emojiall.com/images/60/telegram/270a.gif'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png'" alt="rock-image" height="50px" width="50px">
+                </div>
+             <div class="choice" id="p">
+                   <img src="https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png" onmouseover="this.src='https://www.emojiall.com/images/60/telegram/1f44b.gif'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png'" alt="paper-image" height="50px" width="50px">
+             </div>
+             <div class="choice" id="s">
+                 <img src="https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png" onmouseover="this.src='https://www.emojiall.com/images/60/telegram/270c.gif'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png'" alt="scissors-image" height="50px" width="50px">
+            </div>
+         </div>
+        </div>
+        <div class="back-to-menu">
+            <a href="/games/LobbyKNB/lobby.html">
+            <div class="back-to-menu-button"> Назад </div>
+        </div>
+    </div>
+</body>
+
+<!-- -----Javascript----- -->
+<script type="text/javascript">
+ let userScore = 0;
+let computerScore = 0;
+const userScore_span = document.getElementById("user-score");
+const computerScore_span = document.getElementById("computer-score");
+const scoreTable_div = document.querySelector(".score-table");
+const result_p = document.querySelector(".result > p");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
+
+function getComputerChoice() {
+    const choices = ['r', 'p', 's'];
+    const randomNumber = Math.floor(Math.random() * 2);
+    return choices[randomNumber];
+}
+
+function convertToWord(letter) {
+    if (letter === "r") return "✊";
+    if (letter === "p") return "🖐️";
+    return "✌️";
+}
+
+function winCondition () { 
+     if(userScore === 1) {
+        result_p.innerHTML = 'Вы выйграли!';
+        rock_div.style.pointerEvents = 'none';
+        paper_div.style.pointerEvents = 'none';
+        scissors_div.style.pointerEvents = 'none';
+     }
+    if (computerScore === 1) {
+       result_p.innerHTML = 'Вы проиграли.';
+       rock_div.style.pointerEvents = 'none';
+       paper_div.style.pointerEvents = 'none';
+       scissors_div.style.pointerEvents = 'none';
+    }  
+}
+
+function win(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = `${convertToWord(userChoice)} бьёт ${convertToWord(computerChoice)}<br> Вы выйграли!`;
+    userChoice_div.classList.add('green-glow');
+    setTimeout(function(){userChoice_div.classList.add('green-glow')}, 300);
+}
+
+
+function lose(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = `${convertToWord(userChoice)} проигрывает ${convertToWord(computerChoice)}<br> Вы проиграли!`;
+    userChoice_div.classList.add('red-glow');
+    setTimeout(function(){userChoice_div.classList.add('red-glow')}, 300);
+}
+
+
+function draw(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    result_p.innerHTML = `${convertToWord(userChoice)} на ${convertToWord(computerChoice)}<br> Попробуйте ещё раз!`;
+    userChoice_div.classList.add('blue-glow');
+    setTimeout(function(){userChoice_div.classList.add('blue-glow')}, 300);
+}
+
+function game(userChoice) {
+    const computerChoice= getComputerChoice();
+    switch(userChoice + computerChoice) {
+        case "rs":
+        case "pr":
+        case "sp":
+            win(userChoice, computerChoice);
+          break;
+        case "rp":
+        case "ps":
+        case "sr":
+            lose(userChoice, computerChoice);
+          break;
+        case "rr":
+        case "pp":
+        case "ss":
+            draw(userChoice, computerChoice);
+          break;
+    }
+    
+    winCondition();
+}
+
+function main() {
+    rock_div.addEventListener('click', function() {
+        game("r");
+    })
+
+    paper_div.addEventListener('click', function() {
+        game("p");
+    })
+
+    scissors_div.addEventListener('click', function() {
+        game("s");
+    })
+}
+main();
+
+function refreshPage() {
+   window.location.reload();
+}
+
+</script>
+</html>

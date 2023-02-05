@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <title>TON.Chance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Камень Ножницы Бумага</h1>
+    </header>
+
+    <div class="score-table">
+        <div id="user-label" class="badge">ВЫ</div>
+        <div id="computer-label" class="badge">ROBOT</div>
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="images/rock.png" alt="rock-image" height="50px" width="50px">
+        </div>
+        <div class="choice" id="p">
+            <img src="images/paper.png" alt="paper-image" height="50px" width="50px">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/scissors.png" alt="scissors-image" height="50px" width="50px">
+        </div>
+    </div>
+    <p id="message">Сделайте Ваш выбор</p>
+    <button class="refresh" type="submit"  onClick="refreshPage()">Try Again!!</button>
+    <script src="app.js"></script>
+</body>
+</html>
