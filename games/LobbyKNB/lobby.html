@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <meta charset="utf-8">
 <title>TON.Chance</title>
 <style type="text/css">
@@ -53,7 +57,7 @@ body {
   justify-content: center;
   margin-top: -35px;
   position: absolute;
-  top: 70%;
+  top: 20%;
   left: 49%;
   transform: translate(-50%, -50%);
   }
@@ -166,96 +170,20 @@ body {
         left: 28%;
         transform: translate(-50%, -50%);
       }
-/*Chat*/
-.chat {
-    left: 555px;
-    margin: 0 auto;
-    margin-top: -282px;
-    min-height: 725px;
-    padding: 0px 0 10px;
-    position: relative;
-    width: 380px;
-    box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
-    border-radius: 10px;
-  }
-  .Chat_Header{
-    padding: 30px 90px 15px 5px;
-    border-radius: 10px 10px 0 0px;
-    outline: none;
-    resize: none;
-    background: #000000b9;
-    color: #ffffff;
-    width: 100%;
-    -webkit-transition: all .15s ease 0s;
-    transition: all .15s ease 0s;
-    font-family: Tahoma; 
-  }
-  .Chat_Header_Text{
-    left: 45%;
-    position: absolute;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 51px;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .Chat_Header_Online{
-    left: 105%;
-    position: absolute;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 50px;
-    margin-left: 0px;
-    margin-top: -50px ;
-  }
-  .App__chat_footer_wrapper {
-    padding: 5px 5px 2px;
-    width: 100%;
-    width: 380px;
-    height: 10px;
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  *, :after, :before {
-    box-sizing: border-box;
-  }
-  .App__chat_footer-input {
-    padding: 10px 90px 10px 5px;
-    border-radius: 5px;
-    border: 3px solid #1d2134;
-    outline: none;
-    resize: none;
-    background: #000000b9;
-    color: #ffffff;
-    width: 100%;
-    -webkit-transition: all .15s ease 0s;
-    transition: all .15s ease 0s;
-    font-family: 'Poppins', sans-serif; 
-  }
-  .App__chat_footer-emoticons {
-    position: absolute;
-    top: 12px;
-    right: 30px;
-  }
-  .App__chat_footer-emoticons, .App__chat_footer-send {
-    cursor: pointer;
-    color: #5e5e5e;
-    margin: 5px;
-  }
-  .App__chat_footer-send {
-    position: absolute;
-    top: 12px;
-    right: 5px;
-  }
-  .Create_Game {
+      .dropdown{
+
+      }
+    .btn btn-primary{
+
+    }
+    .dropdown-menu{
+      
+    }
+
+      .Create_Game {
     left: -555px;
     margin: 0 auto;
-    margin-top: -725px;
+    margin-top: -220px;
     min-height: 600px;
     padding: 0px 0 10px;
     position: relative;
@@ -266,15 +194,29 @@ body {
     border-radius: 10px;
   }
   .Create_Game_Header{
-    padding: 30px 90px 15px 5px;
+    padding: 60px 200px 0px 0px;
     border-radius: 10px 10px 0 0px;
     outline: none;
     resize: none;
-    background: #000000b9;
+    background-image: linear-gradient(138deg, var(--blue1), var(--blue2));
     color: #ffffff;
     width: 100%;
     -webkit-transition: all .15s ease 0s;
     transition: all .15s ease 0s; 
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Create_Game_Text{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;  
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .Quantity_ton{
     left: 0%;
@@ -284,7 +226,7 @@ body {
     font-family: 'Poppins', sans-serif;  
     font-weight: bold;
     line-height: 51px;
-    top: 12%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -295,18 +237,17 @@ body {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;  
     font-weight: bold;
-    top: 32%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .OtherAmount_ton{
-    padding: 0px 5px 2px;
-    width: 100%;
-    width: 380px;
+    padding: 0px 0px 2px;
+    width: 350%;
     height: 20px;
     position: absolute;
-    top: 150%;
-    left: 50%;
+    top: 160%;
+    left: 85%;
     transform: translate(-50%, -50%);
   }
   .Input_currency{
@@ -321,17 +262,16 @@ body {
     padding-left: 30px;
     font-family: 'Poppins';
     position: absolute;
-    top: 130%;
-    left: 7%;
+    top: 120%;
+    left: 5%;
     transform: translate(-50%, -50%);
   }
   .input_ton_logo{
-    left: 50%;
+    left: 13%;
     position: absolute;
     top: 16px;
-    margin-left: -128px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   .OtherAmount_footer-input {
     padding: 12px 20px 8px 90px;
@@ -341,7 +281,7 @@ body {
     resize: none;
     background: #000000b9;
     color: #ffffff;
-    width: 100%;
+    width: 70%;
     -webkit-transition: all .15s ease 0s;
     transition: all .15s ease 0s;
     font-family: 'Poppins', sans-serif; 
@@ -352,8 +292,8 @@ body {
     font-family: sans-serif; 
     font-size: 8px; 
     position: absolute;
-    top: 44%;
-    left: 21%;
+    top: 45%;
+    left: 27%;
     transform: translate(-50%, -50%);
   }
 .OtherAmount_button{
@@ -368,14 +308,14 @@ body {
   height: 44px;
   cursor: pointer;
   position: absolute;
-  top: 118%;
-  left: 87%;
+  top: 115%;
+  left: 71%;
   transform: translate(-50%, -50%);
   }
 .Quantity_Selection_ton{
   position: absolute;
-    top: 200%;
-    left: 102%;
+    top: 250%;
+    left: 90%;
     transform: translate(-50%, -50%);
     width: 500px;
 }
@@ -479,10 +419,10 @@ body {
 }
 .Send_ton{
   position: absolute;
-  top: 95%;
-  left: 65%;
+  top: 44%;
+  left: 49%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 100%;
 }
 .Header-checkbox-send-ton{
   padding: 15px 60px 15px 5px;
@@ -496,24 +436,20 @@ body {
   transition: all .15s ease 0s;
   font-family: Tahoma; 
   position: absolute;
-  top: -25%;
-  left: 38%;
+  top: 97%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .checkbox-send-ton{
   position: relative;
 	display: inline-block;
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-bottom: 10px;
-	width: 340px;
+	width: 100%;
 	font-size: 15px;
 	font-weight: lighter;
-	letter-spacing: 1px;
-	margin: 0 auto;
-	margin-left: 20px;
-	margin-right: 0px;
-	margin-bottom: 20px;
+	letter-spacing: 3px;
 	text-align: center;
 	border-radius: 10px;
 	overflow: hidden;
@@ -525,17 +461,18 @@ body {
   text-stroke: 0px var(--white);
   background: linear-gradient(138deg, #4687ff, #225cc6);
   border-color: #224079;
+  margin: 0 auto;
 }
 .Display_send_ton{
   color: #ffffff;
   font-family: 'Poppins', sans-serif; 
   font-size: 18px; 
-  width: 85px;
+  width: 100px;
   height: 44px;
   display: inline-block;
   position: absolute;
-  top: -40%;
-  left: 40%;
+  top: 80%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 .Gesture_selection{
@@ -663,6 +600,59 @@ body {
 	height: 0;
 	visibility: hidden;
 }
+.modal-fade-show{
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 180%;
+    overflow: hidden;
+    outline: 0;
+}
+.modal-content{
+  position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #a03bff00;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal-header{
+  padding: 20px 90px 25px 7px;
+    border-radius: 10px 10px 0 0px;
+    outline: none;
+    resize: none;
+    background: #000000b9;
+    color: #ffffff;
+    -webkit-transition: all .15s ease 0s;
+    transition: all .15s ease 0s; 
+    width: 100%;
+    height: 60px;
+}
+.modal-body{
+    min-height: 500px;
+    padding: 0px 0 0px;
+    position: relative;
+    width: 100%;
+    background: #1d1d1d;
+    box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
+}
+.modal-footer{
+  min-height: 50px;
+    padding: 0px 0 0px;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
+}
 </style>
 </head>
             <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -690,101 +680,97 @@ body {
                       </div> 
                         <div class="clearfix"></div><!--для float-->       
                     </div><!-- games container --> 
-                    <div class="chat">
-                        <div class="Chat_Header">
-                          <div class="Chat_Header_Text">Чат Онлайн:<script>
-                            let chatonlineCounter = 0;
-                            window.addEventListener('load', () => {
-                              chatonlineCounter++;
-                              document.getElementById('chatonlineCounter').innerHTML = chatonlineCounter;
-                            });
-                            window.addEventListener('beforeunload', () => {
-                              onlineCounter--;
-                              document.getElementById('chatonlineCounter').innerHTML = chatonlineCounter;
-                            });
-                          </script>
-                          <div class="Chat_Header_Online" id="chatonlineCounter">0</div></div>
-                        </div>
-                      <div class="App__chat_footer_wrapper">
-                        <input class="App__chat_footer-input" type="text" placeholder="Ваше Сообщение">
-                        <div class="App__chat_footer-emoticons">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
-                            <circle cx="8.5" cy="10.5" r="1.5"></circle>
-                            <circle cx="15.5" cy="10.5" r="1.5"></circle>
-                            <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path>
-                            <path d="M12 16a3.97 3.97 0 0 1-3.201-1.601L7.2 15.601A5.954 5.954 0 0 0 12 18a5.957 5.957 0 0 0 4.8-2.399L15.2 14.4A3.97 3.97 0 0 1 12 16z"></path>
-                          </svg>
-                        </div>
-                        <div class="App__chat_footer-send">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
-                            <path d="M21.426 11.095l-17-8A1 1 0 0 0 3.03 4.242L4.969 12 3.03 19.758a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81zM5.481 18.197l1.09-4.36L13 12l-6.429-1.837-1.09-4.36L18.651 12l-13.17 6.197z"></path>
-                          </svg>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                      Launch demo modal
+                    </button>
+                    
+                    <!-- Модальное окно -->
+                    <div class="modal-fade-show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="Create_Game_Header">
+                              <div class="Create_Game_Text">Создать игру</div>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="Quantity_ton">Количество
+                              <div class="Quantity_Selection_ton">
+                                <div class="col-xl-10 pb-5">
+                                    <input class="checkbox-budget" type="radio" name="budget" id="budget-1" >
+                                    <label class="for-checkbox-budget" id="Quantity_budget_1" for="budget-1">
+                                        <span data-hover="5 TON">5 TON</span>
+                                    </label>
+                                    <input class="checkbox-budget" type="radio" name="budget" id="budget-2">
+                                    <label class="for-checkbox-budget" id="Quantity_budget_2" for="budget-2">							
+                                        <span data-hover="10 TON">10 TON</span>
+                                    </label>
+                                    <input class="checkbox-budget" type="radio" name="budget" id="budget-3">
+                                    <label class="for-checkbox-budget" id="Quantity_budget_3" for="budget-3">							
+                                        <span data-hover="25 TON">25 TON</span>
+                                    </label>
+                                    <input class="checkbox-budget" type="radio" name="budget" id="budget-4">
+                                    <label class="for-checkbox-budget" id="Quantity_budget_4" for="budget-4">							
+                                        <span data-hover="50 TON">50 TON</span>
+                                    </label>
+                                    <input class="checkbox-budget" type="radio" name="budget" id="budget-5">
+                                    <label class="for-checkbox-budget" id="Quantity_budget_5" for="budget-5">							
+                                        <span data-hover="100 TON">100 TON</span>
+                                    </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Gesture_selection">Ваш выбор:
+                              <div class="group-choices">
+                                <input class="checkbox-choice" type="radio" name="choice" id="choice-1" >
+                                <label class="for-checkbox-choice" id="Quantity_budget_1" for="choice-1" >
+                                  <img src="https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png" onmouseover="this.src='images/Kamen.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png'; this.style.width='50px',this.style.height='50px'">
+                                </label>
+                                </label>
+                                <input class="checkbox-choice" type="radio" name="choice" id="choice-2">
+                                <label class="for-checkbox-choice" id="Quantity_budget_2" for="choice-2">							
+                                  <img src="https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png" onmouseover="this.src='images/Bumaga.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png'; this.style.width='50px',this.style.height='50px'">
+                                </label>
+                                <input class="checkbox-choice" type="radio" name="choice" id="choice-3">
+                                <label class="for-checkbox-choice" id="Quantity_budget_3" for="choice-3">							
+                                  <img src="https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png" onmouseover="this.src='images/Nozhnici.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png'; this.style.width='50px',this.style.height='50px'">
+                                </label>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="OtherAmount_Text_ton">Другая сумма
+                              <div class="OtherAmount_ton">
+                                  <div class="Input_currency">TON</div>
+                                  <img class="input_ton_logo" src="images/Ton_Logo.png">
+                                  <button id="myButton" class="OtherAmount_button">OK</button>
+                                  <input class="OtherAmount_footer-input" type="text" id="inputNumber" maxlength="3" placeholder="1 TON">
+                              </div>
+                            </div>
+                            <div class="MinMax_currency">Мин. 0.5 TON - Макс. 999 TON</div>
+                            <div class="Header-checkbox-send-ton">
+                              <p id="display" class="Display_send_ton">0 TON</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <div class="Send_ton">
+                              <button class="checkbox-send-ton" id="Send-ton">Создать</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="dropdown">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                      Создать игру
+                   </button>
+                   <div class="dropdown-menu">
                     <div class="Create_Game">
-                        <div class="Create_Game_Header">
-                            <div class="Chat_Header_Text">Создать игру</div>
-                        </div>
-                    <div class="Quantity_ton">Количество
-                      <div class="Quantity_Selection_ton">
-                        <div class="col-xl-10 pb-5">
-                            <input class="checkbox-budget" type="radio" name="budget" id="budget-1" >
-                            <label class="for-checkbox-budget" id="Quantity_budget_1" for="budget-1">
-                                <span data-hover="5 TON">5 TON</span>
-                            </label>
-                            <input class="checkbox-budget" type="radio" name="budget" id="budget-2">
-                            <label class="for-checkbox-budget" id="Quantity_budget_2" for="budget-2">							
-                                <span data-hover="10 TON">10 TON</span>
-                            </label>
-                            <input class="checkbox-budget" type="radio" name="budget" id="budget-3">
-                            <label class="for-checkbox-budget" id="Quantity_budget_3" for="budget-3">							
-                                <span data-hover="25 TON">25 TON</span>
-                            </label>
-                            <input class="checkbox-budget" type="radio" name="budget" id="budget-4">
-                            <label class="for-checkbox-budget" id="Quantity_budget_4" for="budget-4">							
-                                <span data-hover="50 TON">50 TON</span>
-                            </label>
-                            <input class="checkbox-budget" type="radio" name="budget" id="budget-5">
-                            <label class="for-checkbox-budget" id="Quantity_budget_5" for="budget-5">							
-                                <span data-hover="100 TON">100 TON</span>
-                            </label>
-                        </div>
-                      </div>
+                        
+                    
+                    
                     </div>
-                    <div class="Gesture_selection">Ваш выбор:
-                      <div class="group-choices">
-                        <input class="checkbox-choice" type="radio" name="choice" id="choice-1" >
-                        <label class="for-checkbox-choice" id="Quantity_budget_1" for="choice-1" >
-                          <img src="https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png" onmouseover="this.src='images/Kamen.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png'; this.style.width='50px',this.style.height='50px'">
-                        </label>
-                        </label>
-                        <input class="checkbox-choice" type="radio" name="choice" id="choice-2">
-                        <label class="for-checkbox-choice" id="Quantity_budget_2" for="choice-2">							
-                          <img src="https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png" onmouseover="this.src='images/Bumaga.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png'; this.style.width='50px',this.style.height='50px'">
-                        </label>
-                        <input class="checkbox-choice" type="radio" name="choice" id="choice-3">
-                        <label class="for-checkbox-choice" id="Quantity_budget_3" for="choice-3">							
-                          <img src="https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png" onmouseover="this.src='images/Nozhnici.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png'; this.style.width='50px',this.style.height='50px'">
-                        </label>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="OtherAmount_Text_ton">Другая сумма
-                      <div class="OtherAmount_ton">
-                          <div class="Input_currency">TON</div>
-                          <img class="input_ton_logo" src="images/Ton_Logo.png">
-                          <button id="myButton" class="OtherAmount_button">OK</button>
-                          <input class="OtherAmount_footer-input" type="text" id="inputNumber" maxlength="3" placeholder="1 TON">
-                      </div>
-                    </div>
-                    <div class="MinMax_currency">Мин. 0.5 TON - Макс. 999 TON</div>
-                    <div class="Send_ton">
-                      <div class="Header-checkbox-send-ton"></div>
-                      <button class="checkbox-send-ton" id="Send-ton">Создать</button>
-	                    <p id="display" class="Display_send_ton">0 TON</p>
-                    </div>
-                    </div>
+                  </div>
+                </div>
             </body>
 
 <!-- -----Javascript----- -->
