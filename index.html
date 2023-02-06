@@ -73,17 +73,26 @@ body {
 }
 /*Lobby*/
 .games-container {
-  width: 100%;
+  width: 20%;
+  max-height: 150px;
+  max-width: 400px;
+  min-height: 150px;
+  min-width: 400px;
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  flex-wrap: wrap;
+  position: absolute;
+    top: 140%;
+    left: 49%;
+    transform: translate(-50%, -50%);
 }
 
 .game1 {
-  width: 400px;  /* Ширина изображения */ 
+  width: 100%;  /* Ширина изображения */ 
   float: left; /* Обтекание по правому краю */ 
   padding: 5px; /* Поля вокруг текста */ 
-  margin: 50px; /* Отступы вокруг */ 
+  margin: 50px 0px; /* Отступы вокруг */ 
   border-radius: 10px; /* Закругление углов */ 
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */  
   transition: all 0.5s ease; /* Анимация */  
@@ -94,10 +103,10 @@ body {
 }
 
 .game2 {
-  width: 400px;  /* Ширина изображения */ 
+  width: 100%;  /* Ширина изображения */ 
   float: left; /* Обтекание по правому краю */ 
   padding: 5px; /* Поля вокруг текста */ 
-  margin: 50px; /* Отступы вокруг */ 
+  margin: 50px 0px; /* Отступы вокруг */ 
   border-radius: 10px; /* Закругление углов */ 
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */  
   transition: all 0.5s ease; /* Анимация */  
