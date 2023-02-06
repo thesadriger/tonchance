@@ -80,12 +80,12 @@ body {
   min-width: 200px;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 00px;
   flex-wrap: wrap;
   position: absolute;
-    top: 140%;
-    left: 49%;
-    transform: translate(-50%, -50%);
+  top: 140%;
+  left: 49%;
+  transform: translate(-50%, -50%);
 }
 
 .game1 {
@@ -97,7 +97,6 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */  
   transition: all 0.5s ease; /* Анимация */  
   cursor: pointer; /* "Рука" */  
-  background: url(images/BG_KNB_Lobby.png);
   opacity: 90%;
 
 }
@@ -106,12 +105,11 @@ body {
   width: 100%;  /* Ширина изображения */ 
   float: left; /* Обтекание по правому краю */ 
   padding: 5px; /* Поля вокруг текста */ 
-  margin: 50px 0px; /* Отступы вокруг */ 
+  margin: 10px 0px; /* Отступы вокруг */ 
   border-radius: 10px; /* Закругление углов */ 
   box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Тень */  
   transition: all 0.5s ease; /* Анимация */  
   cursor: pointer; /* "Рука" */  
-  background: url(images/BG_Coin_Lobby.png);
   opacity: 90%;
 
 } 
@@ -161,7 +159,7 @@ body {
 /*Live*/
 .online{
   position: absolute;
-    top: 140%;
+    top: 780%;
     left: 49%;
     transform: translate(-50%, -50%);
 }
@@ -171,19 +169,17 @@ body {
   color: #ffffff;
   font-size: 40px;
   font-weight: bold;
-  line-height: 50px;
-  margin-left: -60px;
-  margin-top: -50px ;
+  margin-left: -140px;
+  margin-top: -80px ;
 }
 .online-quantity{
-  left: 50%;
+  left: 100%;
   position: absolute;
   color: #ffffff;
   font-size: 40px;
   font-weight: bold;
-  line-height: 50px;
-  margin-left: 0px;
-  margin-top: -100px ;
+  margin-left: 50px;
+  margin-top: -80px ;
 }
 
 /*Telegram*/
@@ -263,7 +259,7 @@ body {
                     <div class="clearfix"></div><!--для float-->       
                 </div><!-- games container --> 
                 <div class="online">
-                  <p class="online-live">Онлайн<script>
+                  <p class="online-live">Онлайн:<script>
                       let onlineCounter = 0;
                   
                       window.addEventListener('load', () => {
