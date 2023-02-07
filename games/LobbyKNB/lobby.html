@@ -57,7 +57,7 @@ body {
   justify-content: center;
   margin-top: -35px;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 49%;
   transform: translate(-50%, -50%);
   }
@@ -75,8 +75,8 @@ body {
     height: 50px;
     display: inline-block;
     position: absolute;
-    top: 6%;
-    left: 5%;
+    top: -0%;
+    left: -0%;
     transform: translate(-50%, -50%);
 }
 
@@ -96,6 +96,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
    }
 
    .game1 {
@@ -108,6 +109,7 @@ body {
        transition: all 0.5s ease; /* Анимация */  
        cursor: pointer; /* "Рука" */  
        opacity: 90%;
+       background-image: linear-gradient(138deg, var(--blue1), var(--blue2));
 
    }
 
@@ -641,7 +643,7 @@ body {
     padding: 0px 0 0px;
     position: relative;
     width: 100%;
-    background: #1d1d1d;
+    background: #161616;
     box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
 }
 .modal-footer{
@@ -653,6 +655,39 @@ body {
     opacity: 90%;
     box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
 }
+.Btn-modal-window-create-game{
+  border: 4px;
+  box-shadow: 0px 0px 10px 0px#000000;
+  background: linear-gradient(138deg, var(--blue1), var(--blue2));
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+	transform: translate3d(0, 0, 0);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  margin: -45px 18% 0px;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 </style>
 </head>
             <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -680,8 +715,8 @@ body {
                       </div> 
                         <div class="clearfix"></div><!--для float-->       
                     </div><!-- games container --> 
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                      Launch demo modal
+                    <button type="button" class="Btn-modal-window-create-game" data-toggle="modal" data-target="#myModal">
+                      Создать игру
                     </button>
                     
                     <!-- Модальное окно -->
@@ -758,19 +793,11 @@ body {
                           </div>
                         </div>
                       </div>
+                      <div class="back-to-menu">
+                        <a href="/games/LobbyKNB/lobby.html">
+                        <div class="back-to-menu-button"> Назад </div>
+                      </div>
                     </div>
-                    <div class="dropdown">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                      Создать игру
-                   </button>
-                   <div class="dropdown-menu">
-                    <div class="Create_Game">
-                        
-                    
-                    
-                    </div>
-                  </div>
-                </div>
             </body>
 
 <!-- -----Javascript----- -->
