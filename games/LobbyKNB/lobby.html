@@ -58,7 +58,7 @@ body {
   margin-top: -35px;
   position: absolute;
   top: 15%;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
   }
 
@@ -95,7 +95,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
     flex-wrap: wrap;
    }
 
@@ -489,7 +489,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.group-choices{
+.group-choices-create-game{
   border: 4px;
   background: #0000006c;
   border-radius: 10px;
@@ -625,7 +625,7 @@ body {
     pointer-events: auto;
     background-color: #a03bff00;
     background-clip: padding-box;
-    border-radius: 0.3rem;
+    border-radius: 10px;
     outline: 0;
 }
 .modal-header{
@@ -640,12 +640,12 @@ body {
     width: 100%;
     height: 60px;
 }
-.modal-body{
+.modal-body-create-game{
     min-height: 500px;
     padding: 0px 0 0px;
     position: relative;
     width: 100%;
-    background: #161616;
+    background: #1d1d1d;
     box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
 }
 .modal-footer{
@@ -674,8 +674,8 @@ body {
   margin: -45px 18% 0px;
   display: inline-block;
   position: absolute;
-  top: 40%;
-  left: 31%;
+  top: 39%;
+  left: 32%;
   transform: translate(-50%, -50%);
 }
 @keyframes gradient {
@@ -690,6 +690,169 @@ body {
 	}
 }
 
+/*-----Модальное окно 2-----*/
+.modal-body-game{
+    min-height: 500px;
+    padding: 0px 0 0px;
+    position: relative;
+    width: 100%;
+    background: #fc9797;
+    box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
+}
+
+.Btn-modal-window-game{
+  border: 4px;
+  box-shadow: 0px 0px 10px 0px#000000;
+  background: linear-gradient(138deg, var(--blue1), var(--blue2));
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+	transform: translate3d(0, 0, 0);
+  border-radius: 0px 0px 10px 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold;
+  width: 250px;
+  height: 50px;
+  margin: -45px 18% 0px;
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
+.box-border-main{
+    border: 4px;
+    background: #0000006c;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.score-table {
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    background: linear-gradient(90deg, #3fb0ff, #831bcb);
+    box-shadow: 0 0 20px rgb(250, 237, 53);
+    font-size: 40px;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.badge {
+    background: linear-gradient(90deg, #3fb0ff, #831bcb);
+    box-shadow: 0 0 10px rgb(250, 237, 53);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 4px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#user-label {
+    position: absolute;
+    width: 60%;
+    top: 90px;
+    left: 37px;
+}
+
+.result {
+    font-size: 35px;
+    color: #f7f1e3;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.group-choices{
+    border: 4px;
+    background: #0000006c;
+    border-radius: 10px;
+    width: 380px;
+    height: 150px;
+    margin: -45px 3% 5px;
+    display: inline-block;
+}
+
+.choices {
+    margin: 30px 0;
+    text-align: center;
+}
+.choice {
+    border: 4px solid rgb(250, 237, 53);
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+
+.choice:hover {
+    cursor: pointer;
+    background: #ffffff;
+}
+.border-message{
+    border: 4px;
+    background: #0000006c;
+    border-radius: 10px;
+    width: 380px;
+    height: 40px;
+    margin: 50px 3% ;
+}
+
+#message {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+
+.green-glow {
+    border: 4px solid #05c46b;
+    box-shadow: 0 0 40px #0be881;
+}
+
+.red-glow {
+    border: 4px solid #f53b57;
+    box-shadow: 0 0 10px #ef5777;
+}
+
+.blue-glow {
+    border: 4px solid #6bc5d2;
+    box-shadow: 0 0 10px #485460;
+}
+.close-game-btn{
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border-color: #1d9426;
+  background-color: #20bb2d;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold;
+}
+
 </style>
 </head>
             <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -702,28 +865,19 @@ body {
               </div>
                 <div class="games-container">        
                     <div class="game1" id="game1"> 
-                        <a href="knb/knb.html">
-                          <img class="kamen" ></a>
-                          <div class="LoginSession_box">
-                            <div class="caption"> Войти </div> 
-                        </div> 
-                     </div>
-                     <a href="knb/knb.html">
-                      <div class="game1"> 
                           <img class="kamen" >
                           <div class="LoginSession_box">
-                            <div class="caption"> Войти </div> 
-                          </div>           
-                      </div> 
-                    </a> 
+                            <div class="caption" data-toggle="modal" data-target="#myModal2"> Войти </div> 
+                        </div> 
+                     </div>
                         <div class="clearfix"></div><!--для float-->       
-                    </div><!-- games container --> 
-                    <button type="button" class="Btn-modal-window-create-game" data-toggle="modal" data-target="#myModal">
+                    </div>
+                    <button type="button" class="Btn-modal-window-create-game" data-toggle="modal" data-target="#myModal1">
                       Создать игру
                     </button>
                     
-                    <!-- Модальное окно -->
-                    <div class="modal-fade-show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <!-- Модальное окно 1 -->
+                    <div class="modal-fade-show" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -731,7 +885,7 @@ body {
                               <div class="Create_Game_Text">Создать игру</div>
                             </div>
                           </div>
-                          <div class="modal-body">
+                          <div class="modal-body-create-game">
                             <div class="Quantity_ton">Количество
                               <div class="Quantity_Selection_ton">
                                 <div class="col-xl-10 pb-5">
@@ -759,7 +913,7 @@ body {
                               </div>
                             </div>
                             <div class="Gesture_selection">Ваш выбор:
-                              <div class="group-choices">
+                              <div class="group-choices-create-game">
                                 <input class="checkbox-choice" type="radio" name="choice" id="choice-1" >
                                 <label class="for-checkbox-choice" id="Quantity_budget_1" for="choice-1" >
                                   <img src="https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png" onmouseover="this.src='images/Kamen.png'; this.style.width='50px',this.style.height='50px'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png'; this.style.width='50px',this.style.height='50px'">
@@ -793,6 +947,45 @@ body {
                             <div class="Send_ton">
                               <button class="checkbox-send-ton" id="Send-ton">Создать</button>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-fade-show" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <div class="Create_Game_Header">
+                              <div class="Create_Game_Text"></div>
+                            </div>
+                          </div>
+                          <div class="modal-body-game">
+                            <div class="box-border-main">
+                              <div class="score-table">
+                                  <div id="user-label" class="badge">Общий Банк</div>
+                                  <span id="user-score">0</span> : <span id="computer-score">0</span> <!--<img src="images/Ton_Logo.png" alt="" width="30px" height="30px"> - Добавление Ton к балансу-->
+                              </div>
+                              <div class="result">
+                               <p></p>
+                              </div>
+                              <div class="border-message"><p id="message">Сделайте Ваш выбор:</p></div>
+                              <div class="group-choices">
+                               <div class="choices">
+                                   <div class="choice" id="r">
+                                       <img src="https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png" onmouseover="this.src='https://www.emojiall.com/images/60/telegram/270a.gif'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/raised-fist-apple.png'" alt="rock-image" height="50px" width="50px">
+                                      </div>
+                                   <div class="choice" id="p">
+                                         <img src="https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png" onmouseover="this.src='https://www.emojiall.com/images/60/telegram/1f44b.gif'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/waving-hand-apple.png'" alt="paper-image" height="50px" width="50px">
+                                   </div>
+                                   <div class="choice" id="s">
+                                       <img src="https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png" onmouseover="this.src='https://www.emojiall.com/images/60/telegram/270c.gif'" onmouseout="this.src='https://emojis.wiki/emoji-pics/apple/victory-hand-apple.png'" alt="scissors-image" height="50px" width="50px">
+                                  </div>
+                               </div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="close-game-btn" data-dismiss="modal">Вернуться</button>
                           </div>
                         </div>
                       </div>
@@ -835,5 +1028,116 @@ body {
 $('.modal-fade-show').on('hide.bs.modal', function (e) {
   $(this).fadeOut(500);
 });
+
+//Скрипты игровой сессии//
+let userScore = 0;
+let computerScore = 0;
+const userScore_span = document.getElementById("user-score");
+const computerScore_span = document.getElementById("computer-score");
+const scoreTable_div = document.querySelector(".score-table");
+const result_p = document.querySelector(".result > p");
+const rock_div = document.getElementById("r");
+const paper_div = document.getElementById("p");
+const scissors_div = document.getElementById("s");
+
+function getComputerChoice() {
+    const choices = ['r', 'p', 's'];
+    const randomNumber = Math.floor(Math.random() * 2);
+    return choices[randomNumber];
+}
+
+function convertToWord(letter) {
+    if (letter === "r") return "✊";
+    if (letter === "p") return "🖐️";
+    return "✌️";
+}
+
+function winCondition () { 
+     if(userScore === 1) {
+        result_p.innerHTML = 'Вы выйграли!';
+        rock_div.style.pointerEvents = 'none';
+        paper_div.style.pointerEvents = 'none';
+        scissors_div.style.pointerEvents = 'none';
+     }
+    if (computerScore === 1) {
+       result_p.innerHTML = 'Вы проиграли.';
+       rock_div.style.pointerEvents = 'none';
+       paper_div.style.pointerEvents = 'none';
+       scissors_div.style.pointerEvents = 'none';
+    }  
+}
+
+function win(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = `${convertToWord(userChoice)} бьёт ${convertToWord(computerChoice)}<br> Вы выйграли!`;
+    userChoice_div.classList.add('green-glow');
+    setTimeout(function(){userChoice_div.classList.add('green-glow')}, 300);
+}
+
+
+function lose(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = `${convertToWord(userChoice)} проигрывает ${convertToWord(computerChoice)}<br> Вы проиграли!`;
+    userChoice_div.classList.add('red-glow');
+    setTimeout(function(){userChoice_div.classList.add('red-glow')}, 300);
+}
+
+
+function draw(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    result_p.innerHTML = `${convertToWord(userChoice)} на ${convertToWord(computerChoice)}<br> Попробуйте ещё раз!`;
+    userChoice_div.classList.add('blue-glow');
+    setTimeout(function(){userChoice_div.classList.add('blue-glow')}, 300);
+}
+
+function game(userChoice) {
+    const computerChoice= getComputerChoice();
+    switch(userChoice + computerChoice) {
+        case "rs":
+        case "pr":
+        case "sp":
+            win(userChoice, computerChoice);
+          break;
+        case "rp":
+        case "ps":
+        case "sr":
+            lose(userChoice, computerChoice);
+          break;
+        case "rr":
+        case "pp":
+        case "ss":
+            draw(userChoice, computerChoice);
+          break;
+    }
+    
+    winCondition();
+}
+
+function main() {
+    rock_div.addEventListener('click', function() {
+        game("r");
+    })
+
+    paper_div.addEventListener('click', function() {
+        game("p");
+    })
+
+    scissors_div.addEventListener('click', function() {
+        game("s");
+    })
+}
+main();
+
+function refreshPage() {
+   window.location.reload();
+}
+const element = document.querySelector("back-to-menu");
+
   </script>
 </html>
