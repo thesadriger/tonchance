@@ -612,7 +612,9 @@ body {
     height: 180%;
     overflow: hidden;
     outline: 0;
+    animation: fadeIn 0.5s ease-in-out;
 }
+
 .modal-content{
   position: relative;
     display: -ms-flexbox;
@@ -825,5 +827,12 @@ body {
       display.textContent = '0 TON';
     }
   });
+  $('.modal-fade-show').on('show.bs.modal', function (e) {
+  $(this).fadeIn(500);
+});
+
+$('.modal-fade-show').on('hide.bs.modal', function (e) {
+  $(this).fadeOut(500);
+});
   </script>
 </html>
