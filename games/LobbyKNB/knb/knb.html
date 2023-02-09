@@ -177,17 +177,18 @@ body {
     border: 4px;
     background: #0000006c;
     border-radius: 10px;
-    width: 40%;
-    height: 50px;
+    width: 30%;
+    height: 760px;
     display: inline-block;
-    position: absolute;
-    top: -11%;
-    left: -12%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 00%;
 }
 
 .back-to-menu-button{
     left: 50%;
+    top: 50%;
     position: absolute;
     color: #ffffff;
     font-size: 25px;    
@@ -227,12 +228,13 @@ body {
             </div>
          </div>
         </div>
-        <a href="/tonchance/games/LobbyKNB/lobby.html">
-            <div class="back-to-menu" >
-              <div class="back-to-menu-button"> Назад </div>
-            </div>
-          </a>
     </div>
+    
+    <a href="/tonchance/games/LobbyKNB/lobby.html">
+        <div class="back-to-menu" id="back-to-menu" >
+          <div class="back-to-menu-button"> Назад </div>
+        </div>
+      </a>
 </body>
 
 <!-- -----Javascript----- -->
@@ -344,6 +346,10 @@ main();
 function refreshPage() {
    window.location.reload();
 }
+const element = document.querySelector("back-to-menu");
 
+element.addEventListener("click", function() {
+  this.style.boxShadow = "100px 100px 50px 10px rgba(0,0,0,0.75)";
+});
 </script>
 </html>
