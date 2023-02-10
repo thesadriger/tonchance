@@ -18,7 +18,7 @@
 	--dark-light: #353746;
 	--blue1: #4687ff;
 	--blue2: #225cc6;
-	--grey: #ecedf3;
+	--green: #20bb2d;
 }
 /*Background*/
 body { 
@@ -472,9 +472,10 @@ body {
   width: 100px;
   height: 44px;
   display: inline-block;
+  text-align: center;
   position: absolute;
   top: 80%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .Gesture_selection{
@@ -696,14 +697,15 @@ body {
     padding: 0px 0 0px;
     position: relative;
     width: 100%;
-    background: #fc9797;
+    background: linear-gradient(180deg, var(--blue1), var(--green));
     box-shadow: 0 0 20px rgba(0,0,0,1); /* Тень*/  
+    border-radius: 10px;
 }
 
 .Btn-modal-window-game{
   border: 4px;
   box-shadow: 0px 0px 10px 0px#000000;
-  background: linear-gradient(138deg, var(--blue1), var(--blue2));
+  background: linear-gradient(180deg, var(--blue1), var(--blue2));
 	background-size: 200% 200%;
 	animation: gradient 5s ease infinite;
 	transform: translate3d(0, 0, 0);
@@ -851,6 +853,9 @@ body {
   font-size: 20px;
   font-family: 'Poppins', sans-serif; 
   font-weight: bold;
+}
+.modal-footer>* {
+    margin: 0.1rem;
 }
 
 </style>
