@@ -40,9 +40,9 @@ body {
   min-width: 360px;
   display: flex;
   justify-content: center;
-  margin-top: -35px;
+  margin-top: 10px;
   position: absolute;
-  top: 70%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   }
@@ -139,9 +139,10 @@ body {
 /*Live*/
 .online{
   position: absolute;
-    top: 530%;
+    top: 830%;
     left: 51%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .online-live {
   left: 50%;
@@ -151,6 +152,7 @@ body {
   font-weight: bold;
   margin-left: -140px;
   margin-top: -80px ;
+  text-align: center;
 }
 .online-quantity{
   left: 100%;
@@ -160,6 +162,7 @@ body {
   font-weight: bold;
   margin-left: 50px;
   margin-top: -80px ;
+  text-align: center;
 }
 
 /*Telegram*/
@@ -205,16 +208,55 @@ body {
 .Auth__telegramBtn svg {
   color: #ffffff;
 }
+ /* Настройки для маленьких экранов */
+ @media only screen and (max-width: 600px) {
+    .mainlogo {
+      text-align: center;
+      margin: auto;
+    }
+
+    .img {
+      width: 80%;
+    }
+
+    .games-container {
+      flex-direction: column;
+    }
+
+    .game1, .game2 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  /* Настройки для больших экранов */
+  @media only screen and (min-width: 1080px) {
+    .mainlogo {
+      text-align: left;
+    }
+
+    .img {
+      width: 50%;
+    }
+
+    .games-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .game1, .game2 {
+      width: 45%;
+      margin: 10px 5%;
+    }
+  }
 </style>
 </head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <       <body>
+         <body>
                 <div class="parallax"></div>
                 <div class="mainlogo">
                     <img  class="img" src="images/Logotype.png">
                 </div>
-                   
-                <div class="games-container">        
+                    <div class="games-container">        
                                     <div class="game1"> 
                                         <a href="games/LobbyKNB/lobby.html">
                                           <img class="kamen" img src="images/null.png" onmouseover="this.src='images/start.png'" onmouseout="this.src='images/null.png'" alt="" width="36" height="36" ></a>
@@ -225,8 +267,8 @@ body {
                                         <img class="kamen" img src="images/null.png" onmouseover="this.src='images/start.png'" onmouseout="this.src='images/null.png'" alt="" width="36" height="36"></a> 
                                         <div class="caption"> Монетка </div>           
                                     </div> 
-                    <div class="clearfix"></div><!--для float-->       
-                </div><!-- games container --> 
+                      <div class="clearfix"></div><!--для float-->       
+                    </div><!-- games container --> 
                 <div class="online">
                   <p class="online-live">Онлайн:<script>
                       let onlineCounter = 0;
@@ -244,5 +286,5 @@ body {
                     <div class="online-quantity" id="online-counter">0</div>
                   </p>
                 </div>
-            </body>>
+            </body>
 </html>
