@@ -59,13 +59,16 @@ body {
   min-height: 75px;
   min-width: 200px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 00px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: absolute;
   top: 140%;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .game1 {
@@ -139,7 +142,7 @@ body {
 /*Live*/
 .online{
   position: absolute;
-    top: 830%;
+    top: 530%;
     left: 51%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -209,7 +212,7 @@ body {
   color: #ffffff;
 }
  /* Настройки для маленьких экранов */
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 800px) {
     .mainlogo {
       text-align: center;
       margin: auto;
@@ -221,21 +224,23 @@ body {
 
     .games-container {
       flex-direction: column;
+      width: 10%;
     }
 
     .game1, .game2 {
       width: 100%;
-      margin: 10px 0;
+      margin: 1200px 50%;
+      flex-wrap: wrap;
     }
   }
   /* Настройки для больших экранов */
-  @media only screen and (min-width: 1080px) {
+  @media only screen and (min-width: 601px) {
     .mainlogo {
       text-align: left;
     }
 
     .img {
-      width: 50%;
+      width: 80%;
     }
 
     .games-container {
@@ -244,8 +249,8 @@ body {
     }
 
     .game1, .game2 {
-      width: 45%;
-      margin: 10px 5%;
+      width: 100%;
+      margin: 20px 10%;
     }
   }
 </style>
@@ -265,7 +270,7 @@ body {
                                     <div class="game2"> 
                                       <a href="games/coin.html">             
                                         <img class="kamen" img src="images/null.png" onmouseover="this.src='images/start.png'" onmouseout="this.src='images/null.png'" alt="" width="36" height="36"></a> 
-                                        <div class="caption"> Монетка </div>           
+                                        <div class="caption"> Монетка Синяя/Красная </div>           
                                     </div> 
                       <div class="clearfix"></div><!--для float-->       
                     </div><!-- games container --> 
